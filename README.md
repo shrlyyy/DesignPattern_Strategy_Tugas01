@@ -35,3 +35,12 @@ Ketika menggunakan strategy pattern, aplikasi harus tahu semua strategi yang ter
 Strategy pattern bekerja dengan interface atau kelas abstrak yang harus diikuti semua strategi. Tetapi, tidak semua strategi butuh semua metode dalam interface tersebut sehingga dapat menyebabkan kode tidak berguna atau tidak diimplementasikan dalam beberapa strategi.
 3. Perlu membuat dan mengelola banyak objek.<br>
 Dalam strategy pattern, biasanya cenderung membuat object untuk context dan object untuk strategy sehingga harus menangani dua objek atau lebih. Hal ini membuat lebih banyak objek yang harus dibuat dan dikelola, saat strategi dibuat dalam jumlah besar maka dapat menyebabkan overhead memori, ketika strategi sering berubah maka harus dibuat objek baru yang dapat mengurangi efisiensi.
+
+## PERBANDINGAN STRATEGY DAN STATE PATTERN:
+| Strategy Pattern | State Pattern |
+| ---------------- | ------------- |
+| Strategy pattern digunakan untuk mengenkapsulasi sekumpulan algoritma terkait, sehingga klien dapat memilih dan menggunakan perilaku yang dapat dipertukarkan saat runtime melalui komposisi dan delegasi. | State pattern digunakan untuk mengelola perubahan perilaku suatu objek berdasarkan kondisi atau status internalnya. |
+| Strategy pattern mengenkapsulasi algoritma atau strategi, yang dapat digunakan kembali dalam konteks yang berbeda. | State pattern mengenkapsulasi status objek, yang umumnya spesifik dan tidak dapat digunakan kembali dalam objek lain. |
+| Dalam strategy pattern, strategi tidak memiliki referensi ke konteksnya, hanya menyediakan perilaku yang digunakan oleh objek konteks. | Dalam state pattern, setiap state biasanya memiliki referensi ke objek konteks agar dapat mengelola transisi antar state. |
+| Dalam strategy pattern, strategi dipilih oleh klien dan dapat diberikan parameter. | Dalam state pattern, state merupakan bagian dari objek konteks, dan objek tersebut akan berpindah dari satu state ke state lain secara internal. |
+
