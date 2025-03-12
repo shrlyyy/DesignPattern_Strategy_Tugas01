@@ -9,12 +9,12 @@ Nopeliba (23100023)<br>
 Strategy Pattern adalah salah satu pola desain (design pattern) dalam kategori Behavioral Patterns yang digunakan untuk mendefinisikan sekumpulan algoritma, membungkusnya dalam kelas-kelas terpisah, dan membuatnya dapat dipertukarkan satu sama lain tanpa mengubah kode yang menggunakan algoritma tersebut.
 
 ## 2. KAPAN PENGGUNAAAN STRATEGY PATTERN: 
-Berikut adalah beberapa situasi di mana Anda harus mempertimbangkan penggunaan pola Strategi:
+Berikut adalah beberapa situasi di mana Anda harus mempertimbangkan penggunaan pola strategi:
 1. Ketika memiliki beberapa algoritma yang dapat digunakan secara bergantian berdasarkan konteks yang berbeda, seperti algoritma pengurutan (pengurutan gelembung, pengurutan gabungan, pengurutan cepat), algoritma pencarian, algoritma kompresi, dll.
 2. Ketika ingin merangkum (enkapsulasi) detail implementasi algoritma secara terpisah dari konteks yang menggunakannya, sehingga memungkinkan pemeliharaan, pengujian, dan modifikasi algoritma lebih mudah tanpa memengaruhi kode klien.
 3. Pemilihan waktu proses, saat kita perlu memilih dan beralih secara dinamis di antara berbagai algoritma saat proses berlangsung berdasarkan preferensi pengguna, pengaturan konfigurasi, atau status sistem.
 4. Mengurangi pernyataan kondisional,  ketika kita  memiliki kelas dengan beberapa pernyataan kondisional yang memilih di antara perilaku yang berbeda, menggunakan pola Strategi membantu menghilangkan kebutuhan akan pernyataan kondisional dan membuat kode lebih modular dan mudah dipelihara.
-6. Pengujian dan ekstensibilitas, bila kita ingin memfasilitasi pengujian unit yang lebih mudah dengan mengaktifkan substitusi algoritme dengan objek tiruan atau rintisan. 7. Selain itu, pola Strategi memudahkan perluasan sistem dengan algoritme baru tanpa mengubah kode yang ada.
+5. Pengujian dan ekstensibilitas, bila kita ingin memfasilitasi pengujian unit yang lebih mudah dengan mengaktifkan substitusi algoritme dengan objek tiruan atau rintisan.
 
 ## 3. KELEBIHAN:
 1. Kumpulan algoritma dapat didefinisikan dalam hierarki kelas.<br>
@@ -128,3 +128,8 @@ Bayar Rp 50000 pakai uang tunai.
 Bayar Rp 100000 pakai kartu kredit.
 Bayar Rp 75000 pakai e-wallet.
 ```
+
+#  Referensi:
+[Strategy Design - GeeksforGeeks](https://www.geeksforgeeks.org/strategy-pattern-set-1/) <br>
+[Strategy Design Pattern in Python - Auth0](https://auth0-com.translate.goog/blog/strategy-design-pattern-in-python/?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=sge&_x_tr_hist=true)
+
